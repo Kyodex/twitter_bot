@@ -34,3 +34,4 @@ client.favorite(object)
 client.update"@ #{object.user.screen_name}: Bah alors ??? "
 end
 end
+
