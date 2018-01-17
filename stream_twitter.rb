@@ -31,7 +31,8 @@ client.filter(track: topics.join(", ")) do |object|
   config.access_token_secret = twitter_token_secret
 end
 client.favorite(object)
-client.update"@ #{object.user.screen_name}: Bah alors ??? "
+client.update" @#{object.user.screen_name}: Bah alors ??? "
+    client.follow(object.user.screen_name)
 end
 end
 
